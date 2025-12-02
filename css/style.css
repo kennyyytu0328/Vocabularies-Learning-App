@@ -244,6 +244,14 @@ body {
     font-weight: 600;
 }
 
+.quiz-instruction {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+
 /* Inputs & Options */
 .cloze-input {
     font-size: 1.8rem;

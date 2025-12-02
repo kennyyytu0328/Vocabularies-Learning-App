@@ -141,6 +141,12 @@ class UI {
         wordDisplay.textContent = q.word;
         this.elements.card.appendChild(wordDisplay);
 
+        // Add instruction text
+        const instruction = document.createElement('div');
+        instruction.className = 'quiz-instruction';
+        instruction.textContent = '🐏Choose the correct one:';
+        this.elements.card.appendChild(instruction);
+
         const optionsContainer = document.createElement('div');
         optionsContainer.className = 'quiz-options';
 
@@ -187,8 +193,8 @@ class UI {
 
         if (isCorrect) {
             icon.textContent = '🎉';
-            const praises = ['Excellent!', 'Great Job!', 'Awesome!', 'Perfect!'];
-            msg.textContent = praises[Math.floor(Math.random() * praises.length)];
+            const praises = ['Excellent!', 'Great Job!', 'Awesome!', 'Perfect!', 'Superb!', 'Well Done!', 'Fantastic!', 'You Rock!', 'Brilliant!', 'Keep it up!'];
+            msg.textContent = '😸' + praises[Math.floor(Math.random() * praises.length)];
             msg.style.color = 'var(--success-color)';
             detail.textContent = question.example || '';
         } else {
