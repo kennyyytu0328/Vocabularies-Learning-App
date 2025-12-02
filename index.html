@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高中英文單字學習小幫手</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Landing View -->
+        <div id="landing-view" class="view active">
+            <header class="hero">
+                <h1>Vocabulary Learning Assistant</h1>
+                <p>Select your level to start learning</p>
+            </header>
+            <div class="level-grid" id="level-grid">
+                <!-- Level buttons will be injected here -->
+            </div>
+            <div class="data-management">
+                 <button id="btn-backup" class="icon-btn" title="匯出進度">⬇️ 備份進度</button>
+                 <button id="btn-restore" class="icon-btn" title="匯入進度">⬆️ 還原進度</button>
+                 <input type="file" id="file-restore" style="display: none" accept=".json">
+            </div>
+        </div>
+
+        <!-- Learning View -->
+        <div id="learning-view" class="view hidden">
+            <header class="learning-header">
+                <button id="btn-home" class="icon-btn">🏠</button>
+                <div class="stats">
+                    <span id="stat-level">Level 1</span>
+                    <span id="stat-progress">0 / 0</span>
+                </div>
+                <button id="btn-settings" class="icon-btn">⚙️</button>
+            </header>
+            
+            <div class="mode-switch">
+                <button class="mode-btn active" data-mode="cloze">Spelling</button>
+                <button class="mode-btn" data-mode="quiz">Definition</button>
+            </div>
+
+            <main class="card-container">
+                <div id="card" class="card">
+                    <!-- Question content will be injected here -->
+                </div>
+            </main>
+
+            <div id="feedback-overlay" class="feedback-overlay hidden">
+                <div class="feedback-content">
+                    <div class="icon"></div>
+                    <div class="message"></div>
+                    <div class="detail"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="lib/sql-wasm.js"></script>
+
+    <!-- App Scripts -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
