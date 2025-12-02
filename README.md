@@ -32,8 +32,8 @@ A lightweight, **static** web application that helps senior high school students
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Vocab-Learning-App.git
-cd Vocab-Learning-App
+git clone https://github.com/kennyyytu0328/Vocabularies-Learning-App.git
+cd Vocabularies-Learning-App
 
 # Install the sql.js library (adds the WASM files to /lib)
 npm install sql.js
