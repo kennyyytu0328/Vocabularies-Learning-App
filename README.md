@@ -32,7 +32,7 @@ A lightweight, **static** web application that helps senior high school students
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Vocab-Learning-App.git
+git clone https://github.com/kennyyytu0328/Vocab-Learning-App.git
 cd Vocab-Learning-App
 
 # Install the sql.js library (adds the WASM files to /lib)
@@ -102,3 +102,4 @@ This project is licensed under the **MIT License** – feel free to use, modify,
 ---
 
 *Happy learning!*
+
