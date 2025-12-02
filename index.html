@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,11 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div id="app">
         <!-- Landing View -->
@@ -22,9 +26,9 @@
                 <!-- Level buttons will be injected here -->
             </div>
             <div class="data-management">
-                 <button id="btn-backup" class="icon-btn" title="匯出進度">⬇️ 備份進度</button>
-                 <button id="btn-restore" class="icon-btn" title="匯入進度">⬆️ 還原進度</button>
-                 <input type="file" id="file-restore" style="display: none" accept=".json">
+                <button id="btn-backup" class="icon-btn" title="匯出進度">⬇️ 備份進度</button>
+                <button id="btn-restore" class="icon-btn" title="匯入進度">⬆️ 還原進度</button>
+                <input type="file" id="file-restore" style="display: none" accept=".json">
             </div>
         </div>
 
@@ -38,7 +42,7 @@
                 </div>
                 <button id="btn-settings" class="icon-btn">⚙️</button>
             </header>
-            
+
             <div class="mode-switch">
                 <button class="mode-btn active" data-mode="cloze">Spelling</button>
                 <button class="mode-btn" data-mode="quiz">Definition</button>
@@ -66,4 +70,5 @@
     <!-- App Scripts -->
     <script type="module" src="js/app.js"></script>
 </body>
+
 </html>
